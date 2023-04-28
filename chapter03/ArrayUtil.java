@@ -33,5 +33,13 @@ public class ArrayUtil {
     int[] g = {1, 2, 3};
     int[] h = Arrays.copyOf(g, 5);
     System.out.println(Arrays.toString(h));
+
+    // 7. setAll 
+    int[] arr = new int[5];
+    // use lambda expression generate array
+    Arrays.setAll(arr, i -> i + 1);
+    System.out.println(Arrays.toString(arr));
+
+    
   }
 }
